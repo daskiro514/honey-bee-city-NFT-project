@@ -23,13 +23,28 @@ const Navbar = () => {
             <div>
               <img alt='SETIMAGE' src={logo} className='img-fluid' />
             </div>
-            <div>
+            <div className='web-nav'>
               <Link to='/' className='mx-2'>Home</Link>
               <Link to='/' className='mx-2'>Beehive</Link>
               <Link to='/' className='mx-2'>Honey Jar</Link>
               <Link to='/' className='mx-2'>Metamorphosis</Link>
               <Link to='/' className='mx-2'>Tokenomics</Link>
               <button className='btn btn-sm text-warning mx-2'>Connect Wallet</button>
+            </div>
+            <div className='mobile-nav'>
+              <div className='dropdown'>
+                <button type='button' className='btn dropdown-toggle' data-toggle='dropdown'>
+                  <i className='fa fa-bars h1'></i>
+                </button>
+                <div className="dropdown-menu">
+                  <p className="dropdown-item"><Link to='/' className='mx-2'>Home</Link></p>
+                  <p className="dropdown-item"><Link to='/' className='mx-2'>Beehive</Link></p>
+                  <p className="dropdown-item"><Link to='/' className='mx-2'>Honey Jar</Link></p>
+                  <p className="dropdown-item"><Link to='/' className='mx-2'>Metamorphosis</Link></p>
+                  <p className="dropdown-item"><Link to='/' className='mx-2'>Tokenomics</Link></p>
+                  <p className="dropdown-item"><button className='btn btn-sm bg-yellow text-dark mx-2'>Connect Wallet</button></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

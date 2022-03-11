@@ -10,7 +10,7 @@ body {
   background: #FFBD22;
 }
 
-.bg-nav a {
+.bg-nav .web-nav a {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
@@ -20,7 +20,7 @@ body {
   text-decoration: none;
 }
 
-.bg-nav button {
+.bg-nav .web-nav button {
   background: #000000;
 }
 
@@ -69,4 +69,35 @@ body {
   .footer .d-inline-block {
     display: block !important;
   }
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 769px) {
+  .web-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu {
+  background-color: #000000;
+  left: -100px;
+}
+
+.dropdown-item {
+  color: #FFBD22;
+}
+
+.dropdown-item a {
+  color: #FFBD22;
 }
