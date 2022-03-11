@@ -1,0 +1,72 @@
+body {
+  font-family: 'Open Sans';
+}
+
+.bg-top {
+  background-color: black;
+}
+
+.bg-nav {
+  background: #FFBD22;
+}
+
+.bg-nav a {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.bg-nav button {
+  background: #000000;
+}
+
+.bg-yellow {
+  background: #FFBD22;
+}
+
+.mint-box {
+  border: 9px solid #000000;
+  box-sizing: border-box;
+}
+
+.landing-1 {
+  background: url('./img/landing-bg-1.png') no-repeat center center/cover;
+}
+
+.black-btn {
+  background: #000000;
+  color: #FFBD22;
+  font-weight: 700;
+}
+
+.yellow-btn {
+  background: #FFBD22;
+}
+
+.landing-3 {
+  background: url('./img/landing-bg-2.png') no-repeat center center/cover;
+}
+
+@media (max-width: 426px) {
+  .landing-3 img {
+    width: 100px;
+  }
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .footer .d-inline-block {
+    display: block !important;
+  }
+}
