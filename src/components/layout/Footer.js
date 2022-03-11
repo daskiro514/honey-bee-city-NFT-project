@@ -14,16 +14,16 @@ const Footer = () => {
           <Link to='/' className='text-warning'>Home</Link>
         </div>
         <div className='d-inline-block px-2'>
-          <Link to='/' className='text-warning'>Beehive</Link>
+          <Link to='/beehive' className='text-warning'>Beehive</Link>
         </div>
         <div className='d-inline-block px-2'>
-          <Link to='/' className='text-warning'>Honey Jar</Link>
+          <Link to='/honeyjar' className='text-warning'>Honey Jar</Link>
         </div>
         <div className='d-inline-block px-2'>
-          <Link to='/' className='text-warning'>Metamorphosis</Link>
+          <Link to='/metamorphosis' className='text-warning'>Metamorphosis</Link>
         </div>
         <div className='d-inline-block px-2'>
-          <Link to='/' className='text-warning'>Tokenomics</Link>
+          <Link to='/tokenomics' className='text-warning'>Tokenomics</Link>
         </div>
       </div>
       <div>

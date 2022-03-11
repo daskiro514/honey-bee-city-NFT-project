@@ -116,7 +116,20 @@ const Roadmap = [
   }
 ]
 
+var counter = 0
+
 const Landing = () => {
+
+  const [currentImage, setCurrentImage] = React.useState(bees[0].image)
+
+  React.useEffect(() => {
+    setInterval(async function () {
+      counter++
+      counter = counter % 7
+      await setCurrentImage(bees[counter].image)
+    }, 700)
+  }, [])
+
   return (
     <div className='landing'>
       <div className='landing-1 container-fluid'>
@@ -125,25 +138,25 @@ const Landing = () => {
           <div className='col-lg-4 my-5'>
             <div className='text-center bg-yellow mint-box'>
               <div className='h3 font-weight-bold'>SEASON 1</div>
-              <div className='h5 font-weight-bold'>Mint Your Honey Bee!</div>
-              <div className='h1 font-weight-bold'>1 / 9999</div>
+              <div className='h4 font-weight-bold'>Mint Your Honey Bee!</div>
+              <div className='h0 font-weight-bold'>1 / 9,999</div>
             </div>
             <div className='d-flex align-items-center justify-content-between'>
               <div>
                 <img alt='SETIMAGE' src={minusButton} className='img-fluid' />
               </div>
               <div>
-                <img alt='SETIMAGE' src={beeQueen} className='img-fluid' />
+                <img alt='SETIMAGE' src={currentImage} className='img-fluid' />
               </div>
               <div>
                 <img alt='SETIMAGE' src={plusButton} className='img-fluid' />
               </div>
             </div>
             <div className='text-center bg-yellow mint-box p-3'>
-              <div>Mint 1 Honey Bee NFT.</div>
-              <div>255 MATIC Each.</div>
-              <div className='h4 font-weight-bold py-2'>Total: 255 MATIC</div>
-              <div><button className='black-btn btn px-4'>Mint</button></div>
+              <div className='h4'>Mint 1 Honey Bee NFT.</div>
+              <div className='h4'>255 MATIC Each.</div>
+              <div className='h3 font-weight-bold py-2'>Total: 255 MATIC</div>
+              <div><button className='black-btn btn px-4 h4 py-2'>Mint</button></div>
             </div>
           </div>
           <div className='col-lg-4'></div>
@@ -151,7 +164,7 @@ const Landing = () => {
       </div>
       <div className='landing-2 container'>
         <div className='row align-items-center'>
-          <div className='col-md-7 py-4'>
+          <div className='col-md-7 py-4 px-4'>
             <div className='h1 font-weight-bold'>Welcome To Bee City! An NFT Game Where You Play-2-Earn!</div>
             <div className='py-2'>
               Bee City is a Play-2-Earn NFT game, where the goal is to collect the most amount of honey and bee the most profitable beekeeper! Get ready to mint some bees and put them to work.
@@ -197,7 +210,7 @@ const Landing = () => {
             </div>
           </div>
           <div className='col-md-2'></div>
-          <div className='col-md-8 m-2 p-3 bg-yellow text-center'>
+          <div className='col-md-8 m-3 p-3 bg-yellow text-center'>
             <div><span className='font-weight-bold'>Other NFT Projects </span>= 100% of mint funds + 100% of royalties go into devs wallet</div>
             <br />
             <div><span className='font-weight-bold'>Bee City NFTs </span>= 70% of mint funds + 100% of royalties go into the LP (Honey Jar)</div>

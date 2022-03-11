@@ -8,7 +8,7 @@ const FAQ = () => {
         <div className='col-md-12 pb-3 text-center'>
           <div className='h1 font-weight-bold'>Frequently Asked Questions</div>
         </div>
-        <div className='col-md-6'>
+        <div className='col-md-6 px-4'>
           <div className='h4 font-weight-bold py-2 pt-3'>What is the benefit of the Pollen Boost?</div>
           <div>
             <div className='pb-2'>Our Policy team will constantly be assessing the health of the Honey Jar (bank) and when possible pollen boosts will be made available to beekeepers.</div>
@@ -32,7 +32,7 @@ const FAQ = () => {
             We are a very small group of individuals who have been involved in several different crypto communities and felt it was time to start our own community. We came across this fantastic open source model and thought that we could make some adjustments / improvements to make an even better project. Our team consists of developers, designers, marketers and policy makers. As of right now we are actively searching for developers and marketers to add to our team. If you're interested in joining the Bee City team, come meet us on Discord and let us know what you can do in the #Contribution channel.
           </div>
         </div>
-        <div className='col-md-6'>
+        <div className='col-md-6 px-4'>
           <div className='h4 font-weight-bold py-2 pt-3'>How do I know this project isn't just another rug pull?</div>
           <div>
             First, the liquidity pool is locked. There is no way anyone can access it. Not developers, not hackers, not anyone. Period. Don't believe us? Our contracts have also been both internally audited AND by a third part to ensure we are rug-proof.
