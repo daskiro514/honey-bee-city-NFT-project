@@ -21,7 +21,9 @@ const Navbar = () => {
         <div className='container'>
           <div className='d-flex align-items-center justify-content-between py-1'>
             <div>
-              <img alt='SETIMAGE' src={logo} className='img-fluid' />
+              <Link to='/'>
+                <img alt='SETIMAGE' src={logo} className='img-fluid' />
+              </Link>
             </div>
             <div className='web-nav'>
               <Link to='/' className='mx-2'>Home</Link>
