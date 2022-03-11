@@ -235,7 +235,7 @@ const Landing = () => {
       <FAQ />
       <div className='landing-5 container-fluid'>
         <div className='row'>
-          <img alt='SETIMAGE' src={landingBeeBG} className='img-fluid' />
+          <img alt='SETIMAGE' src={landingBeeBG} className='img-fluid w-100' />
         </div>
       </div>
     </div>

@@ -143,3 +143,57 @@ body {
     font-weight: 800 !important;
   }
 }
+
+.beehive {
+  background: url('./img/beehive-bg.png') no-repeat center center/cover;
+}
+
+@media (max-width: 769px) {
+  .beehive .col-lg-10 {
+    text-align: center !important;
+  }
+
+  .beehive img {
+    width: 100px;
+  }
+}
+
+.honeyjar {
+  background: url('./img/honeyjar-bg.png') no-repeat center center/cover;
+}
+
+.honeyjar .honeyjar-box {
+  border: 6px solid #000;
+  background-color: #F7F7F7;
+}
+
+.border {
+  border-color: #000 !important;
+}
+
+.honeyjar .honeyjar-box img {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 769px) {
+  .honeyjar .honeyjar-box img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.metamorphosis {
+  background: url('./img/meta-bg.png') no-repeat center center/cover;
+}
+
+@media (max-width: 769px) {
+  .metamorphosis .py-4 {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .metamorphosis .py-5 {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+}
