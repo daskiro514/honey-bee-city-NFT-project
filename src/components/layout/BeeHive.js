@@ -67,7 +67,7 @@ const BeeHive = () => {
           </div>
         </div>
         <div className='row'>
-          <div className='col-lg-10 pb-3'>
+          <div className='col-md-10 pb-3'>
             {bees.map((item, index) =>
               <div key={index} className='d-inline-block text-center p-1 pb-3'>
                 <img alt='SETIMAGE' src={item.image} className='img-fluid' />

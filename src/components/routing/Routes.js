@@ -5,6 +5,7 @@ import BeeHive from '../layout/BeeHive'
 import HoneyJar from '../layout/HoneyJar'
 import Metamorphosis from '../layout/Metamorphosis'
 import NotFound from '../layout/NotFound'
+import Roadmap from '../layout/Roadmap'
 import Tokenomics from '../layout/Tokenomics'
 
 const Routes = () => {
@@ -16,6 +17,7 @@ const Routes = () => {
         <Route exact path='/honeyjar' component={HoneyJar} />
         <Route exact path='/metamorphosis' component={Metamorphosis} />
         <Route exact path='/tokenomics' component={Tokenomics} />
+        <Route exact path='/roadmap' component={Roadmap} />
         <Route component={NotFound} />
       </Switch>
     </section>
